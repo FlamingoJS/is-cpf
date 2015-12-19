@@ -14,7 +14,7 @@ console.log(isCPF('265.827.252-97'));
 //=> true
 
 console.log(isCPF('123.456.789-01'));
-//=> { 'module': 'is-cpf', 'message': 'This field should be a valid CPF.' }
+//=> false
 ```
 
 ## License

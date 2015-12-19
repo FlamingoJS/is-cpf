@@ -1,5 +1,3 @@
-const errorObject = { 'module': 'is-cpf', 'message': 'This field should be a valid CPF.' };
-
 module.exports = function isCPF(string) {
   let sum = 0;
   let rest;
@@ -7,7 +5,7 @@ module.exports = function isCPF(string) {
   string = string.replace(/[\.\-]/g, '');
 
   if (string === '00000000000') {
-    return errorObject;
+    return false;
   }
 
   for (let i = 1; i <= 9; i++) {
@@ -21,7 +19,7 @@ module.exports = function isCPF(string) {
   }
 
   if (rest != parseInt(string.substring(9, 10))) {
-    return errorObject;
+    return false;
   }
 
   sum = 0;
@@ -37,7 +35,7 @@ module.exports = function isCPF(string) {
   }
 
   if (rest !== parseInt(string.substring(10, 11))) {
-    return errorObject;
+    return false;
   }
 
   return true;
