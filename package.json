@@ -1,0 +1,36 @@
+{
+  "name": "is-cpf",
+  "version": "1.0.0",
+  "description": "Determine if a variable is a valid CPF",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlamingoJS/is-cpf.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "keywords": [
+    "cpf"
+  ],
+  "author": {
+    "name": "Bruno Queiros",
+    "email": "brunoofq@gmail.com",
+    "url": "https://github.com/brunoqueiros"
+  },
+  "files": [
+    "index.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/FlamingoJS/is-cpf/issues"
+  },
+  "homepage": "https://github.com/FlamingoJS/is-cpf#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.3.21",
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
